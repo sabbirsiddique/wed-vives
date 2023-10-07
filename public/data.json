@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "service_name": "Catering and Decor",
+    "service_img": "https://i.ibb.co/7y2MpMr/service1.jpg",
+    "short_description": "Exquisite catering and decor services",
+    "description": "Make your event truly memorable with our comprehensive catering and decor services. From delicious cuisine to stunning decorations, we have all the elements to create an unforgettable experience for you and your guests.\n\nOur expert chefs craft a delectable menu that suits your taste and dietary preferences. Whether you prefer traditional dishes or fusion cuisine, our culinary team delivers excellence. We also offer a wide range of decor options, from elegant floral arrangements to thematic decorations that match your event's style.\n\nOur goal is to transform your vision into reality. We pay meticulous attention to every detail, ensuring that your event reflects your unique personality and preferences. With our catering and decor services, you can relax and enjoy your special day while we handle all the arrangements. Contact us today to discuss your event and let us bring your dreams to life.",
+    "price": 700
+  },
+  {
+    "id": 2,
+    "service_name": "Floral",
+    "service_img": "https://i.ibb.co/m0DvvPX/service2.jpg",
+    "short_description": "Beautiful floral arrangements",
+    "description": "Add a touch of natural beauty to your event with our exquisite floral arrangements. Our talented florists specialize in creating stunning bouquets, centerpieces, and floral designs that will elevate the ambiance of your occasion.\n\nAt Floral Elegance, we source the freshest and most vibrant flowers to ensure your arrangements are not only visually stunning but also long-lasting. Whether you're planning a wedding, corporate event, or any special celebration, our floral designs will leave a lasting impression on your guests.\n\nWe understand that every event is unique, and we work closely with you to tailor our floral creations to your specific theme and color palette. From classic roses to exotic blooms, our extensive selection of flowers offers endless possibilities. Let us bring the beauty of nature to your event with our bespoke floral arrangements.",
+    "price": 250
+  },
+  {
+    "id": 3,
+    "service_name": "Photo, Video, and Audio",
+    "service_img": "https://i.ibb.co/svxGCR2/service3.jpg",
+    "short_description": "Capture and record your moments",
+    "description": "Preserve the precious moments of your special day with our comprehensive photo, video, and audio services. Our team of skilled photographers, videographers, and audio technicians is dedicated to ensuring that every moment is captured in the highest quality.\n\nOur photographers have an eye for detail and creativity, capturing the emotions, smiles, and candid moments that make your day unique. We use state-of-the-art cameras and equipment to ensure the highest resolution and clarity in every shot.\n\nOur videographers create cinematic masterpieces that tell the story of your day. From capturing the exchange of vows to the joyous celebrations, our videos bring your memories to life.\n\nOur audio technicians ensure that every word spoken and every note played is crystal clear. Whether it's speeches, music, or vows, our audio services make sure that you can relive these moments with perfect sound quality.\n\nWith our photo, video, and audio services, you'll have a timeless record of your special day to cherish forever.",
+    "price": 800
+  },
+  {
+    "id": 4,
+    "service_name": "Invitation Cards",
+    "service_img": "https://i.ibb.co/xzdJtcq/service4.jpg",
+    "short_description": "Elegant invitation cards",
+    "description": "Set the perfect tone for your event with our beautifully designed invitation cards. Our collection features a wide range of elegant and customizable options to suit every occasion, from weddings to corporate gatherings.\n\nWe understand that your invitation is the first glimpse your guests have of your event, and we are committed to making it memorable. Our designers use their creativity and attention to detail to craft invitations that reflect your style and theme.\n\nChoose from a variety of paper types, colors, fonts, and embellishments to create a unique and personalized invitation that leaves a lasting impression. Whether you prefer traditional, modern, or themed designs, our team can bring your vision to life.\n\nOur goal is to make the invitation process stress-free and enjoyable. Let us help you create the perfect invitation that sets the stage for your event and gets everyone excited to attend.",
+    "price": 150
+  },
+  {
+    "id": 5,
+    "service_name": "Entertainment",
+    "service_img": "https://i.ibb.co/m4jPZ2R/service5.jpg",
+    "short_description": "Entertainment for all ages",
+    "description": "Keep your guests entertained and dancing all night long with our diverse entertainment options. Whether you're planning a wedding, corporate event, or a celebration, we've got the perfect entertainment solutions for you.\n\nOur talented live bands know how to get the party started, playing a wide range of music genres to suit all tastes. They'll have your guests on their feet and dancing the night away.\n\nFor those who prefer a DJ, our skilled disc jockeys can curate the perfect playlist to keep the energy high and the dance floor busy. We take your music preferences into account, ensuring a personalized experience.\n\nWe also offer interactive entertainment options like photo booths, magicians, and more to add an extra element of fun to your event. No matter what type of entertainment you choose, we guarantee a memorable and enjoyable experience for all ages.",
+    "price": 400
+  },
+  {
+    "id": 6,
+    "service_name": "Venue Selection",
+    "service_img": "https://i.ibb.co/df5zZWk/service6.jpg",
+    "short_description": "Find the perfect venue",
+    "description": "Discovering the ideal venue for your event has never been easier. Our venue selection experts are here to assist you in finding the perfect location that matches your preferences and budget.\n\nWe understand that the venue is a crucial aspect of any event, setting the stage for the ambiance and atmosphere you desire. Whether you're planning a wedding, corporate meeting, or social gathering, we have a wide range of venues in our network.\n\nOur team will work closely with you to understand your needs, theme, and guest count, ensuring that we present you with options that align with your vision. We'll handle all the logistics, negotiations, and site visits, making the venue selection process stress-free for you.\n\nLet us take the guesswork out of finding the perfect venue. With our expertise and dedication, we'll help you secure a location that sets the tone for your event and ensures a memorable experience for you and your guests.",
+    "price": 300
+  }
+]
