@@ -27,7 +27,7 @@ const ServicesCard = ({ service }) => {
           <div
             data-aos="fade-down"
             data-aos-easing="linear"
-            data-aos-duration="1300"
+            data-aos-duration="1500"
           >
             <h2 className="text-2xl font-bold text-center">{service_name}</h2>
             <p className="text-center">{short_description}</p>
@@ -37,7 +37,7 @@ const ServicesCard = ({ service }) => {
             <Link to={`/services/${id}`}>
               <button
                 data-aos="fade-left"
-                data-aos-duration="1500"
+                data-aos-duration="1700"
                 className="btn text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500"
               >
                 Details
