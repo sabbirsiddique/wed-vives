@@ -5,6 +5,9 @@ import Gallery from "../Pages/Gallery/Gallery";
 import Blog from "../Pages/Blog/Blog";
 import About from "../Pages/About/About";
 import SelectedService from "../Pages/SelectedService/SelectedService";
+import Login from "../Pages/login/Login";
+import Register from "../Pages/register/Register";
+import PriveateRouter from "./PriveateRouter";
 // import ErrorPage from "../Pages/errorPage/ErrorPage";
 
 const router = createBrowserRouter([
@@ -32,8 +35,16 @@ const router = createBrowserRouter([
       },
       {
         path: "/services/:id",
-        element: <SelectedService></SelectedService>,
+        element: <PriveateRouter><SelectedService></SelectedService></PriveateRouter>,
         loader: ()=>fetch("../.././public/data.json"),
+      },
+      {
+        path: "/login",
+        element: <Login></Login>,
+      },
+      {
+        path: "/register",
+        element: <Register></Register>,
       }
     ]
   },

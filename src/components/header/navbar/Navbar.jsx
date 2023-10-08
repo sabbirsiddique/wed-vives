@@ -1,6 +1,16 @@
-import { NavLink } from "react-router-dom";
+import { useContext } from "react";
+import { Link, NavLink } from "react-router-dom";
+import { AuthContext } from "../../../providers/AuthProvider";
 
 const Navbar = () => {
+
+  const {user,logOut} = useContext(AuthContext);
+
+  const handleLogOut=()=>{
+      logOut()
+      .then()
+      .catch()
+  }
   return (
     <div>
       <div className="navbar bg-base-100">
@@ -38,7 +48,7 @@ const Navbar = () => {
               >
                 Home
               </NavLink>
-          <NavLink
+              <NavLink
                 to="/gallery"
                 className={({ isActive, isPending }) =>
                   isPending
@@ -50,7 +60,7 @@ const Navbar = () => {
               >
                 Gallery
               </NavLink>
-          <NavLink
+              <NavLink
                 to="/blog"
                 className={({ isActive, isPending }) =>
                   isPending
@@ -62,7 +72,7 @@ const Navbar = () => {
               >
                 Blog
               </NavLink>
-          <NavLink
+              <NavLink
                 to="/about"
                 className={({ isActive, isPending }) =>
                   isPending
@@ -85,59 +95,61 @@ const Navbar = () => {
               </li> */}
             </ul>
           </div>
-          <a className="btn btn-ghost normal-case text-4xl font-bold"><span className="text-[#ee514b]">Wed</span><span className="text-[#F9B232]">Vibes</span></a>
+          <a className="btn btn-ghost normal-case text-4xl font-bold">
+            <span className="text-[#ee514b]">Wed</span>
+            <span className="text-[#F9B232]">Vibes</span>
+          </a>
         </div>
         <div className="navbar-center hidden lg:flex">
           <ul className="menu menu-horizontal px-1 gap-8">
-
-          <NavLink
-                to="/"
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "text-red-500 text-lg underline font-bold"
-                    : ""
-                }
-              >
-                Home
-              </NavLink>
-          <NavLink
-                to="/gallery"
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "text-red-500 text-lg underline font-bold"
-                    : ""
-                }
-              >
-                Gallery
-              </NavLink>
-          <NavLink
-                to="/blog"
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "text-red-500 text-lg underline font-bold"
-                    : ""
-                }
-              >
-                Blog
-              </NavLink>
-          <NavLink
-                to="/about"
-                className={({ isActive, isPending }) =>
-                  isPending
-                    ? "pending"
-                    : isActive
-                    ? "text-red-500 text-lg underline font-bold"
-                    : ""
-                }
-              >
-                About
-              </NavLink>
+            <NavLink
+              to="/"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-red-500 text-lg underline font-bold"
+                  : ""
+              }
+            >
+              Home
+            </NavLink>
+            <NavLink
+              to="/gallery"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-red-500 text-lg underline font-bold"
+                  : ""
+              }
+            >
+              Gallery
+            </NavLink>
+            <NavLink
+              to="/blog"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-red-500 text-lg underline font-bold"
+                  : ""
+              }
+            >
+              Blog
+            </NavLink>
+            <NavLink
+              to="/about"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "text-red-500 text-lg underline font-bold"
+                  : ""
+              }
+            >
+              About
+            </NavLink>
             {/* <li>
               <a>Item 1</a>
             </li>
@@ -150,7 +162,24 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500">Login</a>
+          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+            <div className="w-10 rounded-full">
+              <img src="https://i.ibb.co/g7Vwd0R/user-1.png" />
+            </div>
+          </label>
+          {
+            user?
+            <button onClick={handleLogOut} className="btn text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500">
+              Logout
+            </button>
+            :
+            <Link to="/login">
+            <button className="btn text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500">
+              Login
+            </button>
+          </Link>
+          }
+         
         </div>
       </div>
     </div>
