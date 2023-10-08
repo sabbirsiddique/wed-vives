@@ -2,6 +2,7 @@ import { useLoaderData } from "react-router-dom";
 import Slider from "../../components/header/slider/Slider";
 import Services from "../../components/services/Services";
 import Stat from "../../components/stat/Stat";
+import Tools from "../../components/tools/Tools";
 
 const Home = () => {
 
@@ -20,6 +21,8 @@ const Home = () => {
             <Stat></Stat>
             </div>
             
+
+            <Tools></Tools>
         </div>
     );
 };
