@@ -5,9 +5,26 @@ import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
 
 const Login = () => {
-  const { logIn } = useContext(AuthContext);
+  const {googleSignIn, logIn} = useContext(AuthContext);
   const location = useLocation();
   const navigate = useNavigate();
+
+
+  const handleGoogleSignin = ()=>{
+    googleSignIn()
+    .then((res)=>{
+        Swal.fire(
+            "Good job!", 
+            "You successfully logged in", 
+            "success"
+            );
+            
+        navigate(location?.state ? location.state : "/");
+    })
+  }
+  
+
+
 
   const handleLogin = (e) => {
     e.preventDefault();
@@ -34,10 +51,6 @@ const Login = () => {
             type: "error"
         })
       });
-
-    console.log(e.currentTarget);
-
-    console.log(form.get("password"));
   };
   return (
     <div>
@@ -83,11 +96,12 @@ const Login = () => {
                 <button className="btn btn-primary bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500">
                   Login
                 </button>
-                <button className="btn btn-primary bg-gradient-to-r from-green-400 via-blue-500 to-yellow-400">
+                <button onClick={handleGoogleSignin} className="btn btn-primary bg-gradient-to-r from-green-400 via-blue-500 to-yellow-400">
                   <span><img src="https://i.ibb.co/4Jyhggz/google.png" className="w-6 h-6 mr-4"/></span>Google
                 </button>
               </div>
             </form>
+            
           </div>
         </div>
       </div>
