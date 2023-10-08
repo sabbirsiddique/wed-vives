@@ -1,35 +1,37 @@
+/* eslint-disable no-unused-vars */
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const Register = () => {
 
     const {createUser}= useContext(AuthContext)
 
 
-
-
-
-
-
-
-
-
   const handleRegister = (e) => {
     e.preventDefault();
-
     const form = new FormData(e.currentTarget);
     const name =form.get('name');
     const email =form.get('email');
     const password =form.get('password');
-    console.log(e.currentTarget);
+   
 
-    console.log(email,password,name);
+   const validPassword = /^(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{6,}$/;
+   if(!validPassword.test(password)){
+    Swal.fire('Error','Password must be at least 6 characters long, contain one capital letter, and one special character.', 'error');
+    return;
+   }
 
 
-    createUser(name,email,password)
+    createUser(email,password)
     .then(result=>{
-        console.log(result.user)
+        
+        Swal.fire(
+            'Good job!',
+            'Registration succesfull',
+            'success'
+          );
     })
     .catch(error=>{
         console.log(error)

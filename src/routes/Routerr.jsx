@@ -23,11 +23,11 @@ const router = createBrowserRouter([
       },
       {
         path: "/gallery",
-        element: <Gallery></Gallery>,
+        element: <PriveateRouter><Gallery></Gallery></PriveateRouter>,
       },
       {
         path: "/blog",
-        element: <Blog></Blog>,
+        element: <PriveateRouter><Blog></Blog></PriveateRouter>,
       },
       {
         path: "/about",

@@ -1,6 +1,8 @@
+/* eslint-disable no-unused-vars */
 import { useContext } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { AuthContext } from "../../../providers/AuthProvider";
+import Swal from "sweetalert2";
 
 const Navbar = () => {
 
@@ -8,7 +10,13 @@ const Navbar = () => {
 
   const handleLogOut=()=>{
       logOut()
-      .then()
+      .then(res=>{
+        Swal.fire(
+          'Good job!',
+          'You are logged out!',
+          'success'
+        )
+      })
       .catch()
   }
   return (
@@ -162,11 +170,21 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
+
+            
+        {/* split('@')[0].replace(/\d/g, '').toUpperCase() */}
+          {
+            user? 
+            <label tabIndex={0} className="btn btn-ghost btn-circle avatar">
             <div className="w-10 rounded-full">
               <img src="https://i.ibb.co/g7Vwd0R/user-1.png" />
             </div>
           </label>
+          :""
+          }
+          {
+              user && <span className="mr-2">{user.email.split('@')[0].replace(/\d/g, '').toUpperCase()}</span>
+            }
           {
             user?
             <button onClick={handleLogOut} className="btn text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500">
