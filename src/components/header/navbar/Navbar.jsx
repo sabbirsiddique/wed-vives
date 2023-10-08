@@ -150,7 +150,7 @@ const Navbar = () => {
           </ul>
         </div>
         <div className="navbar-end">
-          <a className="btn text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500">Button</a>
+          <a className="btn text-white bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500">Login</a>
         </div>
       </div>
     </div>

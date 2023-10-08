@@ -1,6 +1,7 @@
 import { useLoaderData } from "react-router-dom";
 import Slider from "../../components/header/slider/Slider";
 import Services from "../../components/services/Services";
+import Stat from "../../components/stat/Stat";
 
 const Home = () => {
 
@@ -14,6 +15,10 @@ const Home = () => {
             </div>
 
             <Services services = {services}></Services>
+
+            <div className="flex justify-center items-center mb-20 mt-6">
+            <Stat></Stat>
+            </div>
             
         </div>
     );
