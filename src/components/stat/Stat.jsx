@@ -1,6 +1,15 @@
+import Aos from "aos";
+import 'aos/dist/aos.css'; 
+
+Aos.init();
+Aos.init({
+    duration: 1500,
+  });
+
 const Stat = () => {
   return (
-    <div>
+    <div data-aos="zoom-in-up"
+    data-aos-anchor-placement="top-bottom">
       <h2 className="text-center mt-8 mb-5">We Belive In Hardwork</h2>
       <div className="stats stats-vertical lg:stats-horizontal shadow">
         <div className="stat">

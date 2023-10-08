@@ -3,6 +3,13 @@ import { useContext } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../providers/AuthProvider";
 import Swal from "sweetalert2";
+import Aos from "aos";
+import 'aos/dist/aos.css'; 
+
+Aos.init();
+Aos.init({
+    duration: 1500,
+  });
 
 const Login = () => {
   const {googleSignIn, logIn} = useContext(AuthContext);
@@ -18,7 +25,7 @@ const Login = () => {
             "You successfully logged in", 
             "success"
             );
-            
+
         navigate(location?.state ? location.state : "/");
     })
   }
@@ -56,7 +63,7 @@ const Login = () => {
     <div>
       <div className="hero min-h-screen bg-gradient-to-r from-red-200 via-orange-200 to-yellow-200">
         <div className="hero-content flex-col lg:flex-row-reverse">
-          <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-transparent">
+          <div data-aos="fade-down" className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-transparent">
             <form onSubmit={handleLogin} className="card-body">
               <div className="form-control">
                 <h1>Please Login</h1>

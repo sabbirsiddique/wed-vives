@@ -1,9 +1,18 @@
+import Aos from "aos";
+import 'aos/dist/aos.css'; 
+
+Aos.init();
+Aos.init({
+    duration: 3000,
+  });
+
+
 
 const Tools = () => {
     return (
         <div>
             <h1 className="text-center">TOOLS</h1>
-            <div className="grid grid-cols-1 mx-auto sm:max-w-screen-sm md:max-w-screen-md md:grid-cols-2 lg:max-w-screen-2xl lg:grid-cols-3 gap-8 mb-12 mt-12 text-center">
+            <div data-aos="fade-up" className="grid grid-cols-1 mx-auto sm:max-w-screen-sm md:max-w-screen-md md:grid-cols-2 lg:max-w-screen-2xl lg:grid-cols-3 gap-8 mb-12 mt-12 text-center">
             <div className="shadow-xl bg-gradient-to-r from-red-100 via-orange-100 to-yellow-100 justify-center items-center flex flex-col py-8">
                 <img src="https://i.ibb.co/HtcNXM0/magnifying-glass.png" className="w-[50px] h-[50px]"/>
                 <p>Search</p>
