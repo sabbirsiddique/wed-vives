@@ -23,3 +23,21 @@
 5. **AOS:**
 
 - AOS implemented on home page for smooth visible.
+
+
+
+
+## MCQ Answer ##
+1. A:{}
+   - The variable declared as "greeting' but assigned an object as "greetign". So the answer is **A**
+  
+2. B:TypeError
+   - the sum function expects two arguments and both of them should number data type. but here one is number and another string..thats why the answer will be **B**
+
+3. A:['🍕', '🍫', '🥑', '🍔']
+   -when a new value is assign to a propertyu of object, the original value will no be changed
+
+4. B: Hi there, undefined
+   -the sayHi function expects paramete "name". But it is called like (sayHi()); thats why the answer will be B
+5. C: 3
+   -
