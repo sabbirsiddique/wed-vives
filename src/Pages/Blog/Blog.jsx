@@ -28,7 +28,7 @@ const Blog = () => {
           beautiful blend of traditions, both old and new. From the tossing of
           the bouquet to the cutting of the cake, each ritual carries its own
           significance. Couples often incorporate customs from their cultures or
-          create unique rituals that resonate with them personally, adding a
+          creates unique rituals that resonate with them personally, adding a
           touch of their own story to the day. <br /><br />
            <span className="font-bold text-xl">The Power of Community</span> <br /><br /> One of the
           most heartwarming aspects of weddings is the coming together of a
