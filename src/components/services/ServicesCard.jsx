@@ -29,9 +29,9 @@ const ServicesCard = ({ service }) => {
             data-aos-easing="linear"
             data-aos-duration="1500"
           >
-            <h2 className="text-2xl font-bold text-center">{service_name}</h2>
-            <p className="text-center">{short_description}</p>
-            <p className="text-center">${price}</p>
+            <h2 className="text-2xl font-bold text-center mb-2">{service_name}</h2>
+            <p className="text-center mb-3">{short_description}</p>
+            <p className="text-center text-lg font-bold">${price}</p>
           </div>
           <div className="card-actions justify-center">
             <Link to={`/services/${id}`}>

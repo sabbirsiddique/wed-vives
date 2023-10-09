@@ -10,7 +10,7 @@ const Stat = () => {
   return (
     <div data-aos="zoom-in-up"
     data-aos-anchor-placement="top-bottom">
-      <h2 className="text-center mt-8 mb-5">We Belive In Hardwork</h2>
+      <h2 className="text-center mt-8 mb-5 font-bold text-2xl font-rubik">We Belive In Hardwork</h2>
       <div className="stats stats-vertical lg:stats-horizontal shadow">
         <div className="stat">
           <div className="stat-title">Total Booked</div>

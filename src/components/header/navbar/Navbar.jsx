@@ -92,6 +92,18 @@ const Navbar = () => {
               >
                 About
               </NavLink>
+              <NavLink
+              to="/noRoute"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 p-[2px] text-white rounded text-lg font-bold"
+                  : ""
+              }
+            >
+              NoRoute
+            </NavLink>
               {/* <li>
                 <a>Item 1</a>
               </li>
@@ -157,6 +169,18 @@ const Navbar = () => {
               }
             >
               About
+            </NavLink>
+            <NavLink
+              to="/noRoute"
+              className={({ isActive, isPending }) =>
+                isPending
+                  ? "pending"
+                  : isActive
+                  ? "bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 p-[2px] text-white rounded text-lg font-bold"
+                  : ""
+              }
+            >
+              NoRoute
             </NavLink>
             {/* <li>
               <a>Item 1</a>

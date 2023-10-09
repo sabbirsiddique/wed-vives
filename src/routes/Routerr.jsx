@@ -8,13 +8,13 @@ import SelectedService from "../Pages/SelectedService/SelectedService";
 import Login from "../Pages/login/Login";
 import Register from "../Pages/register/Register";
 import PriveateRouter from "./PriveateRouter";
-// import ErrorPage from "../Pages/errorPage/ErrorPage";
+import ErrorPage from "../Pages/errorPage/ErrorPage";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root></Root>,
-    // errorElement: <ErrorPage></ErrorPage>,
+    errorElement: <ErrorPage></ErrorPage>,
     children: [
       {
         path: "/",
