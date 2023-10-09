@@ -35,9 +35,9 @@
    - the sum function expects two arguments and both of them should number data type. but here one is number and another string..thats why the answer will be **B**
 
 3. A:['🍕', '🍫', '🥑', '🍔']
-   -when a new value is assign to a propertyu of object, the original value will no be changed
+   - when a new value is assign to a propertyu of object, the original value will no be changed
 
 4. B: Hi there, undefined
-   -the sayHi function expects paramete "name". But it is called like (sayHi()); thats why the answer will be B
+   - the sayHi function expects paramete "name". But it is called like (sayHi()); thats why the answer will be B
 5. C: 3
    -
