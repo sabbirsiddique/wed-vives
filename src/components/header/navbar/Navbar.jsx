@@ -50,7 +50,7 @@ const Navbar = () => {
                   isPending
                     ? "pending"
                     : isActive
-                    ? "text-red-500 text-lg underline font-bold"
+                    ? "bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 p-[2px] text-white rounded text-lg font-bold"
                     : ""
                 }
               >
@@ -62,7 +62,7 @@ const Navbar = () => {
                   isPending
                     ? "pending"
                     : isActive
-                    ? "text-red-500 text-lg underline font-bold"
+                    ? "bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 p-[2px] text-white rounded text-lg font-bold"
                     : ""
                 }
               >
@@ -74,7 +74,7 @@ const Navbar = () => {
                   isPending
                     ? "pending"
                     : isActive
-                    ? "text-red-500 text-lg underline font-bold"
+                    ? "bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 p-[2px] text-white rounded text-lg font-bold"
                     : ""
                 }
               >
@@ -86,7 +86,7 @@ const Navbar = () => {
                   isPending
                     ? "pending"
                     : isActive
-                    ? "text-red-500 text-lg underline font-bold"
+                    ? "bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 p-[2px] text-white rounded text-lg font-bold"
                     : ""
                 }
               >
@@ -116,7 +116,7 @@ const Navbar = () => {
                 isPending
                   ? "pending"
                   : isActive
-                  ? "text-red-500 text-lg underline font-bold"
+                  ? "bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 p-[2px] text-white rounded text-lg font-bold"
                   : ""
               }
             >
@@ -128,7 +128,7 @@ const Navbar = () => {
                 isPending
                   ? "pending"
                   : isActive
-                  ? "text-red-500 text-lg underline font-bold"
+                  ? "bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 p-[2px] text-white rounded text-lg font-bold"
                   : ""
               }
             >
@@ -140,7 +140,7 @@ const Navbar = () => {
                 isPending
                   ? "pending"
                   : isActive
-                  ? "text-red-500 text-lg underline font-bold"
+                  ? "bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 p-[2px] text-white rounded text-lg font-bold"
                   : ""
               }
             >
@@ -152,7 +152,7 @@ const Navbar = () => {
                 isPending
                   ? "pending"
                   : isActive
-                  ? "text-red-500 text-lg underline font-bold"
+                  ? "bg-gradient-to-r from-red-500 via-orange-500 to-yellow-500 p-[2px] text-white rounded text-lg font-bold"
                   : ""
               }
             >
